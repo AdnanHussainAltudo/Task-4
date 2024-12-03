@@ -1,0 +1,123 @@
+body {
+  font-family: "Montserrat", system-ui;
+}
+
+/* Navbar */
+
+.navbar,
+footer {
+  background-color: #7e15ff;
+  box-shadow: 0 0 0.5rem #333;
+}
+
+.navbar-brand {
+  font-family: "Major Mono Display", system-ui;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  margin: 0 0.5rem;
+  transition: 0.2s ease;
+}
+
+.nav-item:hover {
+  scale: 1.1;
+  font-weight: 600;
+}
+
+/* Hero */
+
+.hero-image {
+  width: 20rem;
+}
+
+.hero-image img {
+  border-radius: 50%;
+  border: 1.25rem solid white;
+  box-shadow: 0 0 0.5rem #333;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .hero-info {
+    width: 100%;
+  }
+}
+
+.hero-info h3,
+.hero-edu p b {
+  color: #444;
+}
+
+.hero-info h3 span {
+  color: #fec001;
+  font-weight: 700;
+}
+
+/* Carousel */
+.carousel-container {
+  height: 20rem;
+}
+
+.carousel-inner {
+  background-image: url("../images/india.jpg");
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-caption {
+  text-shadow: 1px 1px black;
+  margin-bottom: 1rem;
+}
+
+.carousel-indicators button,
+.carousel-control-prev,
+.carousel-control-next {
+  filter: drop-shadow(0 0 0.2rem black);
+  opacity: 1;
+}
+
+/* Card */
+
+.card {
+  margin-bottom: 2rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 23rem;
+}
+
+.card-img-top {
+  height: 7rem;
+  margin: 1rem 0;
+  filter: drop-shadow(0 0 1px #ccc);
+  object-fit: contain;
+}
+
+/* Footer */
+
+footer {
+  height: 2.5rem;
+  font-size: 1rem;
+  color: white;
+}
